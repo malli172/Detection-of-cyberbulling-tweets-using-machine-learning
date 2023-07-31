@@ -1,0 +1,19 @@
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+form {
+	text-align: center;
+	margin-top: 50px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type=text] {
+	padding: 10px;
+	border-radius
+}

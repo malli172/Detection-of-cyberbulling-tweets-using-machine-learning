@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detection of Online abuse tweets using Machine Learning Approach</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+	<link rel="stylesheet" href="static/css/animate.css">
+	<link href="static/css/animate.min.css" rel="stylesheet">
+	<link href="static/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+	<header id="header">
+        <nav class="navbar navbar-default navbar-static-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+					<div class="menu">
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation"><a href="/">Home</a></li>
+							<li role="presentation"><a href="/upload" >Upload Dataset</a></li>
+							<li role="presentation"><a href="/viewdata" class="active">View Dataset</a></li>
+							<li role="presentation"><a href="/train">Train/Test Dataset</a></li>
+							<li role="presentation"><a href="/prediction">Predection</a></li>
+						</ul>
+					</div>
+				</div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+	<div class="slider">
+		<div id="about-slider">
+			<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+			<center>
+			<h1 style="color:#6117e8;">Detection of Online abuse tweets using Machine Learning Approach</h1>
+			</center>
+				<hr>
+    <div align="center">
+                        <div class="form_blg">
+                            <h3 style="color:red">View data</h3>
+                        </div>
+        <table  border="2px">
+            <thead style="border:1px solid;margin:20px">
+                {% for c in col %}
+                    <th style="width:10px !important; color:red">{{c}}</th>
+                {% endfor %}
+            </thead>
+            {% for row in row_data %}
+            <tr>
+                {% for c, rvalue in zip(col,row) %}
+                    <td style="color:black; width:10px !important">{{rvalue}}</td>
+                {% endfor%}
+            </tr>
+            {% endfor %}
+        </table>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+
+    <script src="static/js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/wow.min.js"></script>
+	<script>
+	wow = new WOW(
+	 {
+
+		}	)
+		.init();
+	</script>
+</html>
